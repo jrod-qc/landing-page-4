@@ -1,0 +1,1077 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-indicator {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 12px #0000005e;
+    display: none;
+}
+
+.indicator-logo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.section-indicator>ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100px;
+}
+
+.section-indicator>ul>li {
+    width: 100%;
+    list-style: none;
+}
+
+.section-indicator>ul>li>a {
+    color: #272727;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.section-indicator>ul>li>a:hover {
+    color: #881108;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+#container #section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+#container #section #content {
+    position: absolute;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+}
+
+#section {
+    background-blend-mode: multiply;
+}
+
+#section:nth-child(1) {
+    background: #737373 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(3) {
+    background: #115c7d url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/AdobeStock_340561980_Airflow-d.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(4) {
+    background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(5) {
+    background: #171717;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(6) {
+    background: #000000af url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_WHF_2_1000x1000.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(7) {
+    background: #5a2b2b url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/TRI_WHF_3_1000x1000.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(8) {
+    background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section:nth-child(10) {
+    background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/kaitlyn-baker-vZJdYl5JVXY-unsplash-scaled.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.custom-logo {
+    width: 250px;
+}
+
+
+/* This is the Hero Section */
+
+.firstBox {
+    align-items: center;
+    width: 80%;
+    padding: 0px 30px;
+    border-radius: 5px;
+    transition: transform 800ms;
+    transition: 500ms;
+}
+
+.firstBox>h1 {
+    color: white;
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.firstBox>h2 {
+    color: rgb(225, 225, 53);
+    font-size: 5.5em;
+    line-height: 1.2;
+}
+
+.firstBox>h3 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.firstBox>p {
+    margin-top: 30px;
+}
+
+.firstBox>p>a {
+    background-color: #eb2129;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 1.5em;
+}
+
+.firstBox>p>a:hover {
+    background-color: rgb(225, 0, 0);
+}
+
+.second {
+    position: absolute;
+    right: -2%;
+    top: 20%;
+}
+
+.second>img {
+    height: 1045px;
+}
+
+
+/* This is the Rebate section */
+
+.rebate {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-section-1 {
+    width: 45%;
+}
+
+.site-section-1>h1 {
+    color: #373737;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.site-section-1>p {
+    color: #373737;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 20px 0;
+    line-height: 1.5em;
+}
+
+.site-section-2 {
+    width: 45%;
+    height: 300px;
+    background-image: url("https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/Half-Section-money.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.section-2-img {
+    height: 630px;
+}
+
+.section-2>img {
+    width: 100%;
+}
+
+
+/* This is the section for benefits */
+
+.benefits {
+    width: 100%;
+    text-align: center;
+}
+
+.benefits-text>h1 {
+    width: 60%!important;
+    margin: 0 auto;
+    color: white !important;
+    font-size: 4em;
+}
+
+.benefits-text>p {
+    width: 80%!important;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+}
+
+.benefit-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.benefit-box>li:nth-child(1)>p>i {
+    color: #34A2E1;
+}
+
+.benefit-box>li:nth-child(2)>p>i {
+    color: #0DD140;
+}
+
+.benefit-box>li:nth-child(3)>p>i {
+    color: #BC073B;
+}
+
+.benefit-box>li {
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.benefit-box>li>p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.benefit-box>li>h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.benefit-box>li>p>i {
+    font-size: 3.5em;
+    color: white;
+    padding: 20px 0;
+}
+
+.one-box-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-box-benefit {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.one-box-benefit>p>i {
+    font-size: 80px;
+    color: #2b7912;
+}
+
+.benefit-header {
+    font-size: 5em;
+    color: #2d2d2d;
+}
+
+.one-box-benefit>p {
+    font-size: 2em;
+    color: #2d2d2d;
+    line-height: 1.5;
+}
+
+.section-box-2 {
+    width: 90%;
+    line-height: 1.5;
+}
+
+.benefits {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-box-3 {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    line-height: 1.5;
+}
+
+
+/* How it works Section */
+
+.how-it-works {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.how-it-works>h1 {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 4em;
+    color: white;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.hiw-1,
+.hiw-2,
+.hiw-3,
+.hiw-4 {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.hiw-1>i {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hiw-2>i {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hiw-3>i {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hiw-4>i {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hiw-1-hover,
+.hiw-2-hover,
+.hiw-3-hover,
+.hiw-4-hover {
+    position: absolute;
+    display: none;
+    color: white;
+    background-color: #0e0e0e;
+    padding: 20px;
+    box-shadow: 0px 4px 12px 0px #000000;
+    font-size: 1.5em;
+    width: 730px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hiw-header {
+    color: #fff;
+}
+
+.hiw- .start-saving>h1 {
+    color: white;
+}
+
+.hiw-img {
+    background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_howitworks_680x462-1.png);
+}
+
+
+/* Call to action Section */
+
+.start-saving>h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+.start-saving>p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.start-saving>p>a {
+    background-color: #eb2129;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    transition: 500ms;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.start-saving>p>a:hover {
+    background-color: #bd1a1f;
+}
+
+
+/* This is the Features Section */
+
+.features {
+    width: 90%;
+}
+
+.center-img {
+    text-align: center;
+}
+
+.box-wrapper-2.feature-1 {
+    background-color: #131313;
+}
+
+
+/* This is the first feature */
+
+.feature-1>p>img {
+    width: 90%;
+    max-width: 700px;
+}
+
+.feature-1>h2 {
+    padding: 10px 0;
+    font-size: 3.5em;
+    color: white;
+}
+
+.feature-1>p {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.feature-1>ul {
+    padding: 20px 40px;
+    color: white;
+}
+
+.feature-1>ul>li {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* This is the Second feature */
+
+.feature-2>h2 {
+    padding: 10px 0;
+    font-size: 3.5em;
+    color: white;
+}
+
+.feature-2>p {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.feature-2>ul {
+    padding: 20px 40px;
+    color: white;
+}
+
+.feature-2>ul>li {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* This is the Third feature */
+
+.feature-3>h2 {
+    padding: 10px 0;
+    font-size: 3.5em;
+    color: white;
+}
+
+.feature-3>p {
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.feature-3>ul {
+    padding: 20px 40px;
+    color: white;
+}
+
+.feature-3>ul>li {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* This is the About us Section */
+
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.about-us-img {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about-us-text {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about-us-text>h2 {
+    font-size: 4em;
+    padding: 20px 0;
+}
+
+.about-us-text>p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.about-us-img-1 {
+    max-width: 600px;
+}
+
+.about-us-img-2 {
+    max-width: 550px;
+}
+
+.about-us-img-1>img {
+    width: 100%;
+    box-shadow: 0px 4px 12px 0px #0000006b;
+}
+
+.about-us-img-2>img {
+    width: 100%;
+    position: relative;
+    margin-top: -100px;
+    margin-left: 150px;
+    box-shadow: 0px 4px 12px 0px #0000006b;
+}
+
+
+/* This is the testimonials Section */
+
+.testimonials-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.testimonials-header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 4em;
+    color: white;
+}
+
+.testimonials-section>p {
+    color: white;
+    padding: 0 0 50px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.testimonials-boxes {
+    width: 25%;
+    min-width: 300px;
+    box-shadow: 0px 4px 12px 0px #0000006b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.testimonials-boxes>p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.testimonials-stars>i {
+    color: rgb(249, 225, 47);
+}
+
+
+/* This is the Pricing Section */
+
+.pricing {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-text {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.pricing-text>h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.pricing-text>p {
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.pricing-box {
+    width: 25%;
+    min-width: 300px;
+    height: 350px;
+    box-shadow: 0px 4px 12px 0px #0000006b;
+    padding: 50px 0px;
+    margin: 20px 5px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.pricing-box.middle {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.pricing-box>h2,
+h4,
+ul,
+li {
+    padding: 10px 0;
+}
+
+.pricing-box-heading {
+    background-color: #03A9F4;
+    color: white;
+}
+
+.pricing-box-price {
+    color: rgb(222 97 7);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pricing-box>ul>li {
+    list-style: none;
+}
+
+.pricing-box>ul>li>i {
+    color: green;
+}
+
+.lower-pricing-text {
+    width: 60%;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.lower-pricing-text>p {
+    line-height: 1.5;
+}
+
+.pricing-cta {
+    padding-top: 50px;
+}
+
+.pricing-cta>a {
+    color: white;
+    background-color: #eb2129;
+    padding: 15px 40px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 500ms;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.pricing-cta>a:hover {
+    background-color: #bd1a1f;
+}
+
+@media only screen and (max-width:1024px) {
+    .site-section-1>h1 {
+        font-size: 5vw;
+    }
+    .site-section-1>p {
+        font-size: 2vw;
+    }
+    .benefit-box>li {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .firstBox {
+        width: 80%;
+        text-align: center;
+    }
+    .firstBox>h1 {
+        font-size: 50px;
+    }
+    .firstBox>h2 {
+        font-size: 40px;
+    }
+    .firstBox>h3 {
+        font-size: 18px;
+    }
+    .second {
+        display: none;
+    }
+    .box-wrapper-2 {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .section-1 {
+        width: 80%;
+        height: auto;
+        padding: 0 20px;
+    }
+    .benefits>h1 {
+        width: 80%!important;
+    }
+    .benefits>p {
+        width: 100%!important;
+    }
+    .site-section-1 {
+        width: 80%;
+    }
+    .site-section-2 {
+        width: 80%;
+        height: 500px;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .section-1>h1 {
+        font-size: 55px;
+    }
+    .section-1>p {
+        font-size: 18px;
+    }
+    .section-2>img {
+        width: 100%;
+    }
+    .hiw-img {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .right-side {
+        width: 90%;
+    }
+    .how-it-works>h1 {
+        font-size: 3em;
+    }
+    .hiw-1-hover,
+    .hiw-2-hover,
+    .hiw-3-hover,
+    .hiw-4-hover {
+        display: none;
+        width: 90%;
+        position: relative;
+        font-size: 1.5em;
+    }
+    .about-us-img {
+        width: 70%;
+    }
+    .about-us-img-2>img {
+        margin-left: 120px;
+    }
+    .about-us-text {
+        width: 90%;
+    }
+    .pricing-box {
+        min-width: 230px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    #container #section {
+        scroll-snap-align: none;
+        height: auto;
+        padding: 150px 0;
+    }
+    #container #section #content {
+        position: relative;
+    }
+    #content {
+        height: auto;
+    }
+    .box-wrapper-2 {
+        margin: 0 auto;
+    }
+    .second {
+        display: none;
+    }
+    .firstBox>h1 {
+        font-size: 45px;
+    }
+    .firstBox>h2 {
+        font-size: 34px;
+    }
+    .firstBox>h3 {
+        font-size: 18px;
+    }
+    .firstBox>p>a {
+        background-color: #eb2129;
+        color: white;
+        padding: 10px 27px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 300ms;
+        font-size: 1.5em;
+    }
+    .site-section-1>h1 {
+        font-size: 3em;
+    }
+    .site-section-1>p {
+        font-size: 14px;
+    }
+    .site-section-2 {
+        display: none;
+        width: 80%;
+        height: 360px;
+        padding: 0 20px;
+    }
+    .benefits-text>h1 {
+        font-size: 3em;
+    }
+    .benefits-text>p {
+        font-size: 1em;
+    }
+    .benefit-box>li {
+        width: 300px;
+    }
+    .benefit-box>li>p {
+        font-size: 16px;
+    }
+    .hiw-img {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .right-side {
+        width: 90%;
+    }
+    .how-it-works>h1 {
+        font-size: 3em;
+    }
+    .hiw-1-hover,
+    .hiw-2-hover,
+    .hiw-3-hover,
+    .hiw-4-hover {
+        display: none;
+        width: 90%;
+        position: relative;
+        font-size: 1em;
+    }
+    .start-saving>h1 {
+        font-size: 2em;
+    }
+    .start-saving>p>a {
+        font-size: 1em;
+    }
+    .feature-1>h2 {
+        font-size: 3em;
+    }
+    .feature-1>p {
+        font-size: 1em;
+    }
+    .feature-1>ul>li {
+        font-size: 1em;
+    }
+    .feature-2>h2 {
+        font-size: 3em;
+    }
+    .feature-2>p {
+        font-size: 1em;
+    }
+    .feature-2>ul>li {
+        font-size: 1em;
+    }
+    .feature-3>h2 {
+        font-size: 3em;
+    }
+    .feature-3>p {
+        font-size: 1em;
+    }
+    .feature-3>ul>li {
+        font-size: 1em;
+    }
+    .about-us-img {
+        width: 90%;
+    }
+    .about-us-img-2 {
+        display: none;
+    }
+    .about-us-text {
+        width: 90%;
+    }
+    .about-us-text>p {
+        font-size: 1em;
+    }
+    .testimonials-header {
+        font-size: 3em;
+    }
+    .testimonials-section>p {
+        font-size: 1em;
+    }
+    .pricing-text>p {
+        width: 90%;
+    }
+    .lower-pricing-text {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    h2 {
+        font-size: 2em !important;
+    }
+    .firstBox>p>a {
+        font-size: 1.3em;
+    }
+    .testimonials-boxes {
+        min-width: 248px;
+    }
+    .pricing-box.middle {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
