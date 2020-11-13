@@ -6,19 +6,27 @@
 }
 
 .section-indicator {
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    position: fixed;
     right: 0;
     z-index: 2;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 12px #0000005e;
-    display: none;
 }
 
 .indicator-logo {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.main-logo {
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-color: #fff;
+    margin-right: 30px;
+    background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/quietcool-icon-2020-V3-CMYK-red.png);
+    background-position: left center;
+    background-size: cover;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -29,13 +37,15 @@
 .section-indicator>ul {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
-    width: 100px;
+    height: 90vh;
+    width: 160px;
+    align-content: baseline;
 }
 
 .section-indicator>ul>li {
     width: 100%;
     list-style: none;
+    text-align: right;
 }
 
 .section-indicator>ul>li>a {
@@ -43,10 +53,18 @@
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
+    padding: 20px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
 }
 
 .section-indicator>ul>li>a:hover {
-    color: #881108;
+    background-color: #881108;
+    color: white;
+    box-shadow: 0 0 12px #0000005e;
 }
 
 #container {
