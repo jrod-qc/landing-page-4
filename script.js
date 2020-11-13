@@ -1,3 +1,15 @@
+$(".main-logo-outside").on("click", function() {
+    $(".section-indicator").toggle("slide", { direction: "right" }, 500);
+    $(".indicator-logo-outside").toggle("slide", { direction: "right" }, 500);
+
+})
+
+$(".close-btn").on("click", function() {
+    $(".section-indicator").toggle("slide", { direction: "right" }, 500);
+    $(".indicator-logo-outside").toggle("slide", { direction: "right" }, 500);
+})
+
+
 setInterval(function() {
     const howItWorks = $(".hiw-1");
     const howItWorks2 = $(".hiw-2");

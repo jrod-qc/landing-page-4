@@ -5,13 +5,80 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.section-indicator {
-    display: flex;
-    flex-wrap: wrap;
+.indicator-logo-outside {
     width: 200px;
+    padding: 20px 0;
     position: fixed;
     right: 0;
     z-index: 2;
+    /* transition-delay: 200ms;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms; */
+}
+
+.close-btn {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close-btn>i {
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+.close-btn>i:hover {
+    color: red;
+}
+
+.main-logo-outside {
+    width: 100px;
+    height: 100px;
+    transition: 500ms;
+    background-color: #fff;
+    background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/quietcool-icon-2020-V3-CMYK-red.png);
+    background-position: left center;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.main-logo-outside:hover {
+    box-shadow: 0 0 12px #0000005e;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.section-indicator {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    box-shadow: 0 0 12px #0000005e;
+    z-index: 3;
+    display: none;
 }
 
 .indicator-logo {
@@ -23,7 +90,6 @@
     width: 100px;
     height: 100px;
     background-color: #fff;
-    margin-right: 30px;
     background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/quietcool-icon-2020-V3-CMYK-red.png);
     background-position: left center;
     background-size: cover;
@@ -37,7 +103,6 @@
 .section-indicator>ul {
     display: flex;
     flex-wrap: wrap;
-    height: 90vh;
     width: 160px;
     align-content: baseline;
 }
@@ -45,7 +110,7 @@
 .section-indicator>ul>li {
     width: 100%;
     list-style: none;
-    text-align: right;
+    text-align: center;
 }
 
 .section-indicator>ul>li>a {
@@ -62,30 +127,32 @@
 }
 
 .section-indicator>ul>li>a:hover {
-    background-color: #881108;
-    color: white;
-    box-shadow: 0 0 12px #0000005e;
+    /* background-color: #eb2129; */
+    color: #eb2129;
+    /* box-shadow: 0 0 12px #0000005e; */
+    text-align: right;
+    border-radius: 10px;
 }
 
-#container {
+.container {
     width: 100%;
     height: 100vh;
     overflow: auto;
     scroll-snap-type: y mandatory;
 }
 
-#container #section {
+.container .section {
     width: 100%;
     height: 100%;
     position: relative;
     scroll-snap-align: start;
 }
 
-#container #section #content {
+.container .section .content {
     position: absolute;
 }
 
-#content {
+.content {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -100,11 +167,11 @@
     max-width: 1440px;
 }
 
-#section {
+.section {
     background-blend-mode: multiply;
 }
 
-#section:nth-child(1) {
+.section:nth-child(1) {
     background: #737373 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +179,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(3) {
+.section:nth-child(3) {
     background: #115c7d url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/AdobeStock_340561980_Airflow-d.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +187,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(4) {
+.section:nth-child(4) {
     background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -128,7 +195,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(5) {
+.section:nth-child(5) {
     background: #171717;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,7 +203,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(6) {
+.section:nth-child(6) {
     background: #000000af url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_WHF_2_1000x1000.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -144,7 +211,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(7) {
+.section:nth-child(7) {
     background: #5a2b2b url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/TRI_WHF_3_1000x1000.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -152,7 +219,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(8) {
+.section:nth-child(8) {
     background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -160,7 +227,7 @@
     background-attachment: fixed;
 }
 
-#section:nth-child(10) {
+.section:nth-child(10) {
     background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/kaitlyn-baker-vZJdYl5JVXY-unsplash-scaled.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -934,15 +1001,15 @@ li {
 }
 
 @media only screen and (max-width:414px) {
-    #container #section {
+    .container .section {
         scroll-snap-align: none;
         height: auto;
         padding: 150px 0;
     }
-    #container #section #content {
+    .container .section .content {
         position: relative;
     }
-    #content {
+    .content {
         height: auto;
     }
     .box-wrapper-2 {
