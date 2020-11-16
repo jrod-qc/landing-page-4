@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-* {
+body {
     padding: 0;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
+.site-title,
+address,
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .indicator-logo-outside {
-    width: 200px;
-    padding: 20px 0;
+    width: 150px;
+    /*padding: 20px 20px 0 0;*/
     position: fixed;
     right: 0;
     z-index: 2;
-    /* transition-delay: 200ms;
-    transition: 500ms;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -ms-transition: 500ms;
-    -o-transition: 500ms; */
 }
 
 .close-btn {
@@ -42,21 +57,21 @@
     width: 100px;
     height: 100px;
     transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
     background-color: #fff;
     background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/quietcool-icon-2020-V3-CMYK-red.png);
     background-position: left center;
     background-size: cover;
     cursor: pointer;
-    margin-top: 28px;
+    margin: 28px auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -ms-transition: 500ms;
-    -o-transition: 500ms;
 }
 
 .main-logo-outside:hover {
@@ -93,6 +108,7 @@
     background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/quietcool-icon-2020-V3-CMYK-red.png);
     background-position: left center;
     background-size: cover;
+    margin: 0 auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -104,7 +120,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 160px;
-    align-content: baseline;
+    align-content: flex-start;
 }
 
 .section-indicator>ul>li {
@@ -138,6 +154,8 @@
     width: 100%;
     height: 100vh;
     overflow: auto;
+    margin: 0 auto;
+    padding: 0;
     scroll-snap-type: y mandatory;
 }
 
@@ -163,8 +181,12 @@
 }
 
 .wrapper {
+    display: flex;
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
 }
 
 .section {
@@ -245,7 +267,8 @@
 .firstBox {
     align-items: center;
     width: 80%;
-    padding: 0px 30px;
+    margin: 0 auto;
+    padding: 0 30px;
     border-radius: 5px;
     transition: transform 800ms;
     transition: 500ms;
@@ -258,10 +281,11 @@
     line-height: 1.2;
 }
 
-.firstBox>h2 {
-    color: rgb(225, 225, 53);
-    font-size: 5.5em;
+.firstBox>h2>a {
+    color: #e1e135;
+    font-size: 4em;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .firstBox>h3 {
@@ -285,16 +309,6 @@
 
 .firstBox>p>a:hover {
     background-color: rgb(225, 0, 0);
-}
-
-.second {
-    position: absolute;
-    right: -2%;
-    top: 20%;
-}
-
-.second>img {
-    height: 1045px;
 }
 
 
@@ -693,6 +707,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
 }
 
@@ -732,10 +747,10 @@
 }
 
 .about-us-img-2>img {
-    width: 100%;
+    width: 80%;
     position: relative;
     margin-top: -100px;
-    margin-left: 150px;
+    margin-left: 200px;
     box-shadow: 0px 4px 12px 0px #0000006b;
 }
 
@@ -746,6 +761,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 90%;
 }
 
@@ -800,6 +816,7 @@
 .pricing-text {
     width: 100%;
     padding: 50px 0;
+    margin: 0 auto;
 }
 
 .pricing-text>h1 {
@@ -812,12 +829,12 @@
     text-align: center;
     line-height: 1.5;
     font-size: 1.5em;
+    margin: 0 auto;
 }
 
 .pricing-box {
     width: 25%;
     min-width: 300px;
-    height: 350px;
     box-shadow: 0px 4px 12px 0px #0000006b;
     padding: 50px 0px;
     margin: 20px 5px;
@@ -839,6 +856,7 @@ h4,
 ul,
 li {
     padding: 10px 0;
+    margin: 0 auto;
 }
 
 .pricing-box-heading {
@@ -898,18 +916,20 @@ li {
 }
 
 @media only screen and (max-width:1024px) {
-    .site-section-1>h1 {
-        font-size: 5vw;
+    .testimonials-section>p {
+        padding: 0;
     }
-    .site-section-1>p {
-        font-size: 2vw;
+    .lower-pricing-text {
+        width: 90;
+    }
+    .pricing-text>p {
+        width: 90%;
     }
     .benefit-box>li {
         width: 250px;
+        padding: 0;
+        margin: 0 auto;
     }
-}
-
-@media only screen and (max-width:768px) {
     .box-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -917,18 +937,16 @@ li {
     .firstBox {
         width: 80%;
         text-align: center;
+        padding: 0;
     }
     .firstBox>h1 {
-        font-size: 50px;
+        font-size: 4em;
     }
-    .firstBox>h2 {
-        font-size: 40px;
+    .firstBox>h2>a {
+        font-size: 3.5em;
     }
     .firstBox>h3 {
-        font-size: 18px;
-    }
-    .second {
-        display: none;
+        font-size: 20px;
     }
     .box-wrapper-2 {
         flex-wrap: wrap;
@@ -970,6 +988,7 @@ li {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     .right-side {
         width: 90%;
@@ -985,9 +1004,10 @@ li {
         width: 90%;
         position: relative;
         font-size: 1.5em;
+        margin: 0 auto;
     }
     .about-us-img {
-        width: 70%;
+        width: 80%;
     }
     .about-us-img-2>img {
         margin-left: 120px;
@@ -997,6 +1017,53 @@ li {
     }
     .pricing-box {
         min-width: 230px;
+        padding: 20px 0px;
+        margin: 0px 5px;
+    }
+    .pricing-box-heading {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .indicator-logo-outside {
+        padding: 0;
+    }
+    .main-logo-outside {
+        width: 75px;
+        height: 75px;
+        margin: 20px 20px 0 0;
+    }
+    .indicator-logo-outside {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:758px) {
+    .container {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        margin: 0 auto;
+        padding: 0;
+        scroll-snap-type: none;
+    }
+    .container .section .content {
+        position: relative;
+        height: inherit;
+        padding: 150px 0;
+    }
+    .container .section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        scroll-snap-align: none;
+    }
+    .pricing-box {
+        width: 50%;
+        min-width: 230px;
+        padding: 20px 0px;
+        margin: 15px 5px;
     }
 }
 
@@ -1004,7 +1071,8 @@ li {
     .container .section {
         scroll-snap-align: none;
         height: auto;
-        padding: 150px 0;
+        padding: 0;
+        background-attachment: inherit;
     }
     .container .section .content {
         position: relative;
@@ -1015,13 +1083,10 @@ li {
     .box-wrapper-2 {
         margin: 0 auto;
     }
-    .second {
-        display: none;
-    }
     .firstBox>h1 {
         font-size: 45px;
     }
-    .firstBox>h2 {
+    .firstBox>h2>a {
         font-size: 34px;
     }
     .firstBox>h3 {
@@ -1034,13 +1099,13 @@ li {
         border-radius: 20px;
         text-decoration: none;
         transition: 300ms;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .site-section-1>h1 {
         font-size: 3em;
     }
     .site-section-1>p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .site-section-2 {
         display: none;
@@ -1090,7 +1155,7 @@ li {
         font-size: 1em;
     }
     .feature-1>h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .feature-1>p {
         font-size: 1em;
@@ -1099,7 +1164,7 @@ li {
         font-size: 1em;
     }
     .feature-2>h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .feature-2>p {
         font-size: 1em;
@@ -1108,7 +1173,7 @@ li {
         font-size: 1em;
     }
     .feature-3>h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .feature-3>p {
         font-size: 1em;
@@ -1116,11 +1181,18 @@ li {
     .feature-3>ul>li {
         font-size: 1em;
     }
+    .about-us-section {
+        width: 100%;
+    }
     .about-us-img {
         width: 90%;
     }
     .about-us-img-2 {
         display: none;
+    }
+    .about-us-text>h2 {
+        font-size: 2.5em;
+        padding: 20px 0;
     }
     .about-us-text {
         width: 90%;
@@ -1136,9 +1208,20 @@ li {
     }
     .pricing-text>p {
         width: 90%;
+        font-size: 1em;
+    }
+    .pricing-text>h1 {
+        text-align: center;
+        font-size: 3em;
     }
     .lower-pricing-text {
         width: 90%;
+        font-size: 1em;
+    }
+    .pricing-box {
+        min-width: 80%;
+        padding: 20px 0px;
+        margin: 20px 5px;
     }
 }
 
@@ -1152,7 +1235,7 @@ li {
     .testimonials-boxes {
         min-width: 248px;
     }
-    .pricing-box.middle {
+    .pricing-box .middle {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
