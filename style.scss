@@ -56,6 +56,98 @@ p {
     line-height: 1.8;
 }
 
+
+/* This is the quote modal */
+
+.quote-modal {
+    /*display: flex;
+    */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.475);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+    z-index: 5;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 230px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0px 5px 12px 0px black;
+}
+
+.modal-form>form {
+    width: 85%;
+}
+
+.modal-form>form>input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.modal-form>form>textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.modal-form>form>button {
+    text-decoration: none;
+    background-color: rgb(216, 42, 42);
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.modal-header {
+    width: 85%;
+    font-size: 1.5em;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 0 0 20px 0;
+}
+
+.modal-header>h3 {
+    text-align: center;
+}
+
+.exitIcon {
+    text-align: right;
+}
+
+.exitIcon>i {
+    cursor: pointer;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.exitIcon>i:hover {
+    color: rgb(216, 42, 42);
+}
+
 .indicator-logo-outside {
     width: 150px;
     /*padding: 20px 20px 0 0;*/
@@ -256,7 +348,7 @@ p {
 }
 
 .section:nth-child(6) {
-    background: #000000af url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_WHF_2_1000x1000.jpg);
+    background: #000000d1 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/Family_5_1388x1008-d.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,7 +356,7 @@ p {
 }
 
 .section:nth-child(7) {
-    background: #5a2b2b url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/TRI_WHF_3_1000x1000.jpg);
+    background: #000000af url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_WHF_2_1000x1000.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,6 +364,14 @@ p {
 }
 
 .section:nth-child(8) {
+    background: #5a2b2b url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/TRI_WHF_3_1000x1000.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(9) {
     background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -279,7 +379,7 @@ p {
     background-attachment: fixed;
 }
 
-.section:nth-child(10) {
+.section:nth-child(11) {
     background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/kaitlyn-baker-vZJdYl5JVXY-unsplash-scaled.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -583,6 +683,119 @@ p {
 
 .hiw-img>p>img {
     width: 100%;
+}
+
+
+/* This is the learn 5 minutes Section */
+
+$color-button: #fff;
+$color-button-hover: #f00;
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    &43 {
+        padding-top: 75%;
+    }
+    &169 {
+        padding-top: 56%;
+    }
+}
+
+.videoIframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 0px 5px 12px #00000075;
+}
+
+.videoPoster {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-size: cover;
+    text-indent: -999em;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 800ms, height 0s;
+    -moz-transition: opacity 800ms, height 0s;
+    transition: opacity 800ms, height 0s;
+    -webkit-transition-delay: 0s, 0s;
+    -moz-transition-delay: 0s, 0s;
+    transition-delay: 0s, 0s;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        border: 5px solid $color-button;
+        border-radius: 100%;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: -20px 0 0 -10px;
+        border-left: 40px solid $color-button;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        -webkit-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        transition: border-color 300ms;
+    }
+    &:hover,
+    &:focus {
+        &:before {
+            border-color: $color-button-hover;
+        }
+        &:after {
+            border-left-color: $color-button-hover;
+        }
+    }
+    .videoWrapperActive & {
+        opacity: 0;
+        height: 0;
+        -webkit-transition-delay: 0s, 800ms;
+        -moz-transition-delay: 0s, 800ms;
+        transition-delay: 0s, 800ms;
+    }
+}
+
+.main {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.main>h2 {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
 }
 
 
@@ -1072,6 +1285,13 @@ li {
         font-size: 1.2em;
         line-height: 1.8;
     }
+    .modal-form {
+        width: 75%;
+        padding: 20px 20px;
+    }
+    .modal-header {
+        padding: 0;
+    }
     .container .section {
         scroll-snap-align: none;
         height: auto;
@@ -1172,6 +1392,9 @@ li {
         min-width: 80%;
         padding: 20px 0px;
         margin: 20px 5px;
+    }
+    .main {
+        width: 90%;
     }
 }
 
