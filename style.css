@@ -26,6 +26,36 @@ ul {
     margin-top: 0;
 }
 
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
 .indicator-logo-outside {
     width: 150px;
     /*padding: 20px 20px 0 0;*/
@@ -266,49 +296,40 @@ ul {
 
 .firstBox {
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 0 30px;
     border-radius: 5px;
-    transition: transform 800ms;
-    transition: 500ms;
+    color: white;
 }
 
 .firstBox>h1 {
     color: white;
-    font-size: 85px;
     font-weight: 600;
     line-height: 1.2;
 }
 
-.firstBox>h2>a {
+.firstBox>h1>a {
     color: #e1e135;
-    font-size: 4em;
     line-height: 1.2;
     text-decoration: none;
 }
 
-.firstBox>h3 {
-    color: white;
-    font-size: 1.5em;
-}
-
-.firstBox>p {
+.firstBox>h5 {
     margin-top: 30px;
 }
 
-.firstBox>p>a {
-    background-color: #eb2129;
+.firstBox>h5>a {
+    background-color: #c72b31;
     color: white;
     padding: 20px 40px;
     border-radius: 20px;
     text-decoration: none;
     transition: 300ms;
-    font-size: 1.5em;
 }
 
-.firstBox>p>a:hover {
-    background-color: rgb(225, 0, 0);
+.firstBox>h5>a:hover {
+    background-color: rgb(186, 5, 5);
 }
 
 
@@ -329,13 +350,12 @@ ul {
 .site-section-1>h1 {
     color: #373737;
     font-weight: 600;
-    font-size: 4em;
 }
 
 .site-section-1>p {
     color: #373737;
     font-weight: normal;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     line-height: 1.5;
     padding: 20px 0;
     line-height: 1.5em;
@@ -364,20 +384,17 @@ ul {
 .benefits {
     width: 100%;
     text-align: center;
+    color: white !important;
 }
 
-.benefits-text>h1 {
+.benefits-text>h2 {
     width: 60%!important;
     margin: 0 auto;
-    color: white !important;
-    font-size: 4em;
 }
 
 .benefits-text>p {
     width: 80%!important;
     margin: 0 auto;
-    color: white;
-    font-size: 25px;
 }
 
 .benefit-box {
@@ -414,13 +431,11 @@ ul {
 }
 
 .benefit-box>li>p {
-    font-size: 1.2em;
     color: white;
 }
 
 .benefit-box>li>h2 {
     color: white;
-    font-size: 2em;
 }
 
 .benefit-box>li>p>i {
@@ -449,12 +464,10 @@ ul {
 }
 
 .benefit-header {
-    font-size: 5em;
     color: #2d2d2d;
 }
 
 .one-box-benefit>p {
-    font-size: 2em;
     color: #2d2d2d;
     line-height: 1.5;
 }
@@ -488,14 +501,13 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: white;
 }
 
-.how-it-works>h1 {
+.how-it-works>h2 {
     width: 100%;
     text-align: center;
     padding: 50px 0;
-    font-size: 4em;
-    color: white;
 }
 
 .right-side {
@@ -510,7 +522,6 @@ ul {
 .hiw-2,
 .hiw-3,
 .hiw-4 {
-    color: white;
     text-align: center;
     padding: 20px 0;
     cursor: pointer;
@@ -544,14 +555,12 @@ ul {
 .hiw-2-hover,
 .hiw-3-hover,
 .hiw-4-hover {
-    position: absolute;
+    position: relative;
     display: none;
     color: white;
     background-color: #0e0e0e;
     padding: 20px;
     box-shadow: 0px 4px 12px 0px #000000;
-    font-size: 1.5em;
-    width: 730px;
     text-align: center;
     margin-top: 10px;
 }
@@ -568,13 +577,20 @@ ul {
     background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_howitworks_680x462-1.png);
 }
 
+.hiw-img>p {
+    text-align: center;
+}
+
+.hiw-img>p>img {
+    width: 100%;
+}
+
 
 /* Call to action Section */
 
 .start-saving>h1 {
     color: white;
     text-align: center;
-    font-size: 4em;
 }
 
 .start-saving>p {
@@ -588,7 +604,6 @@ ul {
     text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 1.5em;
     transition: 500ms;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -623,6 +638,10 @@ ul {
 
 /* This is the first feature */
 
+.feature-1 {
+    color: white;
+}
+
 .feature-1>p>img {
     width: 90%;
     max-width: 700px;
@@ -630,74 +649,52 @@ ul {
 
 .feature-1>h2 {
     padding: 10px 0;
-    font-size: 3.5em;
-    color: white;
 }
 
 .feature-1>p {
-    color: white;
-    font-size: 1.5em;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .feature-1>ul {
     padding: 20px 40px;
-    color: white;
-}
-
-.feature-1>ul>li {
-    color: white;
-    font-size: 1.2em;
 }
 
 
 /* This is the Second feature */
 
-.feature-2>h2 {
-    padding: 10px 0;
-    font-size: 3.5em;
+.feature-2 {
     color: white;
 }
 
+.feature-2>h2 {
+    padding: 10px 0;
+}
+
 .feature-2>p {
-    color: white;
-    font-size: 1.5em;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .feature-2>ul {
     padding: 20px 40px;
-    color: white;
-}
-
-.feature-2>ul>li {
-    color: white;
-    font-size: 1.2em;
 }
 
 
 /* This is the Third feature */
 
-.feature-3>h2 {
-    padding: 10px 0;
-    font-size: 3.5em;
+.feature-3 {
     color: white;
 }
 
+.feature-3>h2 {
+    padding: 10px 0;
+}
+
 .feature-3>p {
-    color: white;
-    font-size: 1.5em;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .feature-3>ul {
     padding: 20px 40px;
-    color: white;
-}
-
-.feature-3>ul>li {
-    color: white;
-    font-size: 1.2em;
 }
 
 
@@ -712,7 +709,7 @@ ul {
 }
 
 .about-us-img {
-    width: 50%;
+    width: 40%;
     max-width: 600px;
     padding: 20px;
 }
@@ -724,12 +721,10 @@ ul {
 }
 
 .about-us-text>h2 {
-    font-size: 4em;
     padding: 20px 0;
 }
 
 .about-us-text>p {
-    font-size: 1.5em;
     line-height: 1.5;
 }
 
@@ -738,7 +733,7 @@ ul {
 }
 
 .about-us-img-2 {
-    max-width: 550px;
+    max-width: 600px;
 }
 
 .about-us-img-1>img {
@@ -769,7 +764,6 @@ ul {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    font-size: 4em;
     color: white;
 }
 
@@ -778,13 +772,12 @@ ul {
     padding: 0 0 50px 0;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
     line-height: 1.5;
 }
 
 .testimonials-boxes {
     width: 25%;
-    min-width: 300px;
+    min-width: 250px;
     box-shadow: 0px 4px 12px 0px #0000006b;
     padding: 20px;
     margin-top: 20px;
@@ -793,7 +786,6 @@ ul {
 }
 
 .testimonials-boxes>p {
-    font-size: 1em;
     line-height: 1.5;
     padding: 10px 0;
 }
@@ -815,20 +807,19 @@ ul {
 
 .pricing-text {
     width: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
     margin: 0 auto;
+    text-align: center;
 }
 
 .pricing-text>h1 {
     text-align: center;
-    font-size: 4em;
 }
 
 .pricing-text>p {
     width: 60%;
     text-align: center;
     line-height: 1.5;
-    font-size: 1.5em;
     margin: 0 auto;
 }
 
@@ -866,7 +857,6 @@ li {
 
 .pricing-box-price {
     color: rgb(222 97 7);
-    font-size: 40px;
     font-weight: bold;
 }
 
@@ -880,9 +870,8 @@ li {
 
 .lower-pricing-text {
     width: 60%;
-    padding: 50px 0;
+    padding: 0px 0;
     text-align: center;
-    font-size: 1.5em;
 }
 
 .lower-pricing-text>p {
@@ -897,7 +886,6 @@ li {
     color: white;
     background-color: #eb2129;
     padding: 15px 40px;
-    font-size: 1em;
     text-decoration: none;
     transition: 500ms;
     border-radius: 20px;
@@ -920,7 +908,8 @@ li {
         padding: 0;
     }
     .lower-pricing-text {
-        width: 90;
+        width: 90%;
+        padding-top: 20px;
     }
     .pricing-text>p {
         width: 90%;
@@ -935,18 +924,9 @@ li {
         flex-wrap: wrap;
     }
     .firstBox {
-        width: 80%;
+        width: 75%;
         text-align: center;
         padding: 0;
-    }
-    .firstBox>h1 {
-        font-size: 4em;
-    }
-    .firstBox>h2>a {
-        font-size: 3.5em;
-    }
-    .firstBox>h3 {
-        font-size: 20px;
     }
     .box-wrapper-2 {
         flex-wrap: wrap;
@@ -972,12 +952,6 @@ li {
         padding: 0 20px;
         margin-top: 20px;
     }
-    .section-1>h1 {
-        font-size: 55px;
-    }
-    .section-1>p {
-        font-size: 18px;
-    }
     .section-2>img {
         width: 100%;
     }
@@ -993,9 +967,6 @@ li {
     .right-side {
         width: 90%;
     }
-    .how-it-works>h1 {
-        font-size: 3em;
-    }
     .hiw-1-hover,
     .hiw-2-hover,
     .hiw-3-hover,
@@ -1003,7 +974,6 @@ li {
         display: none;
         width: 90%;
         position: relative;
-        font-size: 1.5em;
         margin: 0 auto;
     }
     .about-us-img {
@@ -1020,9 +990,6 @@ li {
         padding: 20px 0px;
         margin: 0px 5px;
     }
-    .pricing-box-heading {
-        font-size: 1.2em;
-    }
 }
 
 @media only screen and (max-width:768px) {
@@ -1036,6 +1003,19 @@ li {
     }
     .indicator-logo-outside {
         width: 100px;
+    }
+    .about-us-img {
+        width: 80%;
+    }
+    .about-us-img-2>img {
+        margin-left: 150px;
+    }
+    .pricing-text {
+        padding: 50px 0;
+    }
+    .pricing-box-heading {
+        font-size: 1.5em;
+        padding: 20px 0;
     }
 }
 
@@ -1068,6 +1048,30 @@ li {
 }
 
 @media only screen and (max-width:414px) {
+    h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
     .container .section {
         scroll-snap-align: none;
         height: auto;
@@ -1083,14 +1087,14 @@ li {
     .box-wrapper-2 {
         margin: 0 auto;
     }
-    .firstBox>h1 {
-        font-size: 45px;
+    .firstBox {
+        width: 100%;
     }
-    .firstBox>h2>a {
-        font-size: 34px;
+    .firstBox>h1 {
+        padding: 10px 0;
     }
     .firstBox>h3 {
-        font-size: 18px;
+        padding: 10px 0;
     }
     .firstBox>p>a {
         background-color: #eb2129;
@@ -1099,10 +1103,6 @@ li {
         border-radius: 20px;
         text-decoration: none;
         transition: 300ms;
-        font-size: 1.2em;
-    }
-    .site-section-1>h1 {
-        font-size: 3em;
     }
     .site-section-1>p {
         font-size: 16px;
@@ -1112,12 +1112,6 @@ li {
         width: 80%;
         height: 360px;
         padding: 0 20px;
-    }
-    .benefits-text>h1 {
-        font-size: 3em;
-    }
-    .benefits-text>p {
-        font-size: 1em;
     }
     .benefit-box>li {
         width: 300px;
@@ -1136,8 +1130,11 @@ li {
     .right-side {
         width: 90%;
     }
-    .how-it-works>h1 {
-        font-size: 3em;
+    .hiw-1,
+    .hiw-2,
+    .hiw-3,
+    .hiw-4 {
+        width: 100%;
     }
     .hiw-1-hover,
     .hiw-2-hover,
@@ -1146,40 +1143,6 @@ li {
         display: none;
         width: 90%;
         position: relative;
-        font-size: 1em;
-    }
-    .start-saving>h1 {
-        font-size: 2em;
-    }
-    .start-saving>p>a {
-        font-size: 1em;
-    }
-    .feature-1>h2 {
-        font-size: 2.5em;
-    }
-    .feature-1>p {
-        font-size: 1em;
-    }
-    .feature-1>ul>li {
-        font-size: 1em;
-    }
-    .feature-2>h2 {
-        font-size: 2.5em;
-    }
-    .feature-2>p {
-        font-size: 1em;
-    }
-    .feature-2>ul>li {
-        font-size: 1em;
-    }
-    .feature-3>h2 {
-        font-size: 2.5em;
-    }
-    .feature-3>p {
-        font-size: 1em;
-    }
-    .feature-3>ul>li {
-        font-size: 1em;
     }
     .about-us-section {
         width: 100%;
@@ -1191,32 +1154,19 @@ li {
         display: none;
     }
     .about-us-text>h2 {
-        font-size: 2.5em;
         padding: 20px 0;
     }
     .about-us-text {
         width: 90%;
     }
-    .about-us-text>p {
-        font-size: 1em;
-    }
-    .testimonials-header {
-        font-size: 3em;
-    }
-    .testimonials-section>p {
-        font-size: 1em;
-    }
     .pricing-text>p {
         width: 90%;
-        font-size: 1em;
     }
     .pricing-text>h1 {
         text-align: center;
-        font-size: 3em;
     }
     .lower-pricing-text {
         width: 90%;
-        font-size: 1em;
     }
     .pricing-box {
         min-width: 80%;
@@ -1226,11 +1176,12 @@ li {
 }
 
 @media only screen and (max-width:320px) {
-    h2 {
-        font-size: 2em !important;
+    h5 {
+        font-size: 1em;
     }
-    .firstBox>p>a {
-        font-size: 1.3em;
+    p {
+        font-size: 1em;
+        line-height: 1.8;
     }
     .testimonials-boxes {
         min-width: 248px;
