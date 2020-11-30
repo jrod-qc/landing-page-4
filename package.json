@@ -1,0 +1,23 @@
+{
+    "name": "landing-page-4",
+    "version": "1.0.0",
+    "description": "This is a QuietCool Dealer Landing page.",
+    "main": "script.js",
+    "scripts": {
+        "start": "sass --watch style.scss output.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jrod-qc/landing-page-4.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jrod-qc/landing-page-4/issues"
+    },
+    "homepage": "https://github.com/jrod-qc/landing-page-4#readme",
+    "dependencies": {
+        "sass": "^1.29.0"
+    }
+}
