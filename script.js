@@ -39,7 +39,7 @@ $(".close-btn").on("click", function() {
     $(".indicator-logo-outside").toggle("slide", { direction: "right" }, 500);
 })
 
-
+// This is the how it works section
 setInterval(function() {
     const howItWorks = $(".hiw-1");
     const howItWorks2 = $(".hiw-2");
