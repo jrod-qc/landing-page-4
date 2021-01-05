@@ -196,8 +196,8 @@ p {
 }
 
 .main-logo-outside {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   transition: 500ms;
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
@@ -244,8 +244,8 @@ p {
 }
 
 .main-logo {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background-color: #fff;
   background-image: url(http://dev20.quietcoolsystems.com/wp-content/uploads/2021/01/quietcool-FanIcon-2020-1.png);
   background-position: left center;
@@ -262,9 +262,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 160px;
-  height: 35vh;
+  /* height: 35vh; */
   align-content: flex-start;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .section-indicator > ul > li {
@@ -1274,6 +1274,11 @@ li {
     padding: 20px 0px;
     margin: 15px 5px;
   }
+
+  /* .section-indicator > ul{
+    height: 35vh;
+    overflow: scroll;
+  } */
 }
 
 @media only screen and (max-height: 650px){
@@ -1304,6 +1309,18 @@ li {
     height: inherit;
     padding: 150px 0;
   }
+
+  .section-indicator > ul{
+    height: 60vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    border: rgb(228, 228, 228) solid 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 }
 @media only screen and (max-width: 414px) {
   h1 {
