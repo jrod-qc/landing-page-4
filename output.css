@@ -579,8 +579,9 @@ p {
     text-align: center;
 }
 
-.wwas-info>img {
+.wwas-info>a>img {
     width: 100%;
+    max-width: 500px;
 }
 
 .wwas-info>h2 {
@@ -591,6 +592,22 @@ p {
 .wwas-info>h3 {
     width: 80%;
     padding: 40px 0;
+}
+
+.wwas-info>ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.wwas-info>ul>li {
+    width: 50%;
+    list-style: none;
+}
+
+.wwas-info>ul>li>a>img {
+    width: 100%;
+    max-width: 300px;
 }
 
 #white-bg {
