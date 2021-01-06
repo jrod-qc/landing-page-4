@@ -404,6 +404,14 @@ p {
     background-attachment: fixed;
 }
 
+.section:nth-child(2) {
+    background: #ffffff url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/GASCREENGRAB1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .section:nth-child(3) {
     background: #115c7d url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/AdobeStock_340561980_Airflow-d.jpg);
     background-position: center;
@@ -560,6 +568,36 @@ p {
 }
 
 
+/* This is who we are section */
+
+.wwas-info {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wwas-info>img {
+    width: 100%;
+}
+
+.wwas-info>h2 {
+    width: 80%;
+    padding: 20px 0;
+}
+
+.wwas-info>h3 {
+    width: 80%;
+    padding: 40px 0;
+}
+
+#white-bg {
+    background-color: #ffffffdb;
+}
+
+
 /* This is the section for benefits */
 
 .benefits {
@@ -576,6 +614,7 @@ p {
 .benefits-text>p {
     width: 80% !important;
     margin: 0 auto;
+    line-height: 1.5;
 }
 
 .benefit-box {
@@ -599,7 +638,7 @@ p {
 }
 
 .benefit-box>li {
-    width: 25%;
+    width: 40%;
     list-style: none;
     text-align: center;
     padding: 30px;
@@ -615,8 +654,17 @@ p {
     color: white;
 }
 
+.benefit-box>li>ul>li {
+    padding: 0px;
+}
+
 .benefit-box>li>h2 {
     color: white;
+}
+
+.benefit-box>li>ul>li>p {
+    text-align: left;
+    line-height: 1.5;
 }
 
 .benefit-box>li>p>i {
@@ -692,20 +740,25 @@ p {
 }
 
 .right-side {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .left-side {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .hiw-1,
 .hiw-2,
 .hiw-3,
 .hiw-4 {
+    width: 25%;
     text-align: center;
     padding: 20px 0;
-    cursor: pointer;
 }
 
 .hiw-1>i {
@@ -750,13 +803,29 @@ p {
     color: #fff;
 }
 
+.hiw-header>span {
+    background-color: rgb(49, 149, 225);
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 5px 13px;
+    margin: 0 0 5px 0;
+    font-size: .8em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .hiw- .start-saving>h1 {
     color: white;
 }
 
-.hiw-img {
+
+/* .hiw-img {
     background-image: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_howitworks_680x462-1.png);
-}
+} */
 
 .hiw-img>p {
     text-align: center;
@@ -887,6 +956,11 @@ p {
 /* Call to action Section */
 
 .start-saving>h1 {
+    color: white;
+    text-align: center;
+}
+
+.start-saving>h3 {
     color: white;
     text-align: center;
 }
@@ -1065,7 +1139,7 @@ p {
     color: white;
 }
 
-.testimonials-section>p {
+.testimonials-section>h4 {
     color: white;
     padding: 0 0 50px 0;
     width: 100%;
@@ -1394,6 +1468,14 @@ li {
         position: relative;
         margin: 0 auto;
     }
+    .hiw-1,
+    .hiw-2,
+    .hiw-3,
+    .hiw-4 {
+        width: 40%;
+        text-align: center;
+        padding: 20px 0;
+    }
     .about-us-img {
         width: 80%;
     }
@@ -1437,6 +1519,11 @@ li {
     .about-us-img-2>img {
         margin-left: 150px;
     }
+    .benefit-box>li {
+        width: 44%;
+        padding: 10px;
+        margin: 0 auto;
+    }
     .pricing-text {
         padding: 50px 0;
     }
@@ -1471,6 +1558,14 @@ li {
         height: 100%;
         position: relative;
         scroll-snap-align: none;
+    }
+    .hiw-1,
+    .hiw-2,
+    .hiw-3,
+    .hiw-4 {
+        width: 56%;
+        text-align: center;
+        padding: 20px 0;
     }
     .pricing-box {
         width: 50%;
