@@ -1393,6 +1393,14 @@ li {
   .pricing-box-price {
     font-size: 2.5em;
 }
+
+.contact-form{
+  width: 40%;
+}
+
+.map-section{
+  width: 40%;
+}
 }
 @media only screen and (max-width: 768px) {
   .indicator-logo-outside {
@@ -1425,6 +1433,14 @@ li {
     font-size: 1.5em;
     padding: 20px 0;
   }
+
+  .contact-form{
+    width: 45%;
+  }
+
+  .map-section{
+    width: 45%;
+  }
 }
 @media only screen and (max-width: 758px) {
   .container {
@@ -1455,11 +1471,13 @@ li {
     padding: 20px 0px;
     margin: 15px 5px;
   }
+  .contact-form{
+    width: 100%;
+  }
 
-  /* .section-indicator > ul{
-    height: 35vh;
-    overflow: scroll;
-  } */
+  .map-section{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-height: 650px){
