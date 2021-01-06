@@ -56,10 +56,72 @@ p {
   line-height: 1.8;
 }
 
+
+/* This is the scroll down section call and quote btn */
+.call-and-get-quote{
+  position: fixed;
+  display: flex;
+  width:80px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.308);
+  right: 0;
+  bottom: 10px;
+  z-index: 3;
+  box-shadow: 1px 1px 5px 0px #00000063;
+}
+
+.call-and-get-quote > ul > li{
+  list-style: none;
+  padding: 20px 0 20px 0;
+}
+
+.call-and-get-quote > ul > li > a{
+  color: white;
+}
+
+.phone-float-btn{
+  background-color: rgb(17, 163, 17);
+  width: 150px;
+  height: 150px;
+  padding: 15px 17px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.phone-float-btn:hover{
+  background-color: rgb(14, 138, 14);
+}
+
+.form-float-btn{
+  background-color: #ea252c;
+  width: 150px;
+  height: 150px;
+  padding: 15px 17px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.form-float-btn:hover{
+  background-color: #ce2126;
+}
 /* This is the quote modal */
 .quote-modal {
-  /*display: flex;
-  */
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -142,8 +204,6 @@ p {
 .modal-header {
   width: 85%;
   font-size: 1.5em;
-  /* display: flex;
-  justify-content: space-between; */
   padding: 0 0 20px 0;
 }
 
@@ -169,8 +229,7 @@ p {
 }
 
 .indicator-logo-outside {
-  width: 150px;
-  /*padding: 20px 20px 0 0;*/
+  width: 100px;
   position: fixed;
   right: 0;
   z-index: 2;
@@ -262,9 +321,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 160px;
-  /* height: 35vh; */
   align-content: flex-start;
-  /* overflow: scroll; */
 }
 
 .section-indicator > ul > li {
@@ -1055,11 +1112,13 @@ li {
 .pricing-box-heading {
   background-color: #03A9F4;
   color: white;
+  padding: 30px 0;
 }
 
 .pricing-box-price {
   color: #de6107;
   font-weight: bold;
+  font-size: 3.2em;
 }
 
 .pricing-box > ul > li {
@@ -1105,6 +1164,123 @@ li {
   background-color: #bd1a1f;
 }
 
+
+
+/* This is the contact form */
+.contact-form-map{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  width: 45%;
+  padding: 20px;
+  /* background-color: #0000000a; */
+  border-radius: 5px;
+}
+
+.contact-form > form > input {
+  width: 97.5%;
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.contact-form > form > select {
+  width: 97.5%;
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.contact-form > form > textarea {
+  width: 97.5%;
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.contact-form > form > button{
+  padding: 15px 60px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background-color: #eb2129;
+  margin: 10px 0 0 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  cursor: pointer;
+}
+
+.contact-form > form > button:hover{
+  background-color: #be1b20;
+}
+
+.map-section{
+  width: 50%;
+}
+
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #242424;
+  padding: 50px 0 20px 0;
+  color: white;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-section-1 > p {
+  font-size: .9em;
+}
+
+.footer-section-2 > p {
+  font-size: .9em;
+}
+
+.footer-section-2 > p > a {
+  color: grey;
+  cursor: pointer;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.footer-section-2 > p > a:hover{
+  color: white;
+}
+
 @media only screen and (max-width: 1024px) {
   .testimonials-section > p {
     padding: 0;
@@ -1117,6 +1293,7 @@ li {
 
   .pricing-text > p {
     width: 90%;
+    padding: 30px 0;
   }
 
   .benefit-box > li {
@@ -1212,6 +1389,10 @@ li {
     padding: 20px 0px;
     margin: 0px 5px;
   }
+
+  .pricing-box-price {
+    font-size: 2.5em;
+}
 }
 @media only screen and (max-width: 768px) {
   .indicator-logo-outside {
@@ -1225,7 +1406,7 @@ li {
   }
 
   .indicator-logo-outside {
-    width: 100px;
+    width: 85px;
   }
 
   .about-us-img {
@@ -1297,12 +1478,12 @@ li {
     scroll-snap-align: none;
   }
 
-  .pricing-box {
+  /* .pricing-box {
     width: 50%;
     min-width: 230px;
     padding: 20px 0px;
     margin: 15px 5px;
-  }
+  } */
 
   .container .section .content {
     position: relative;
