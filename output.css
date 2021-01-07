@@ -405,7 +405,8 @@ p {
 }
 
 .section:nth-child(2) {
-    background: #ffffff url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/GASCREENGRAB1.png);
+    /* background: #ffffff url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/GASCREENGRAB1.png); */
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -413,7 +414,8 @@ p {
 }
 
 .section:nth-child(3) {
-    background: #000000c2 url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/05/Savings_Tile_2_694x635.jpg);
+    /* background: #000000c2 url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/05/Savings_Tile_2_694x635.jpg); */
+    background-color: #242424;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,7 +431,8 @@ p {
 }
 
 .section:nth-child(5) {
-    background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg);
+    /* background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg); */
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -788,57 +791,58 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: #373737;
 }
 
 .how-it-works>h2 {
-    width: 100%;
+    width: 55%;
     text-align: center;
     padding: 50px 0;
+    z-index: 2;
 }
 
 .right-side {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     justify-content: center;
 }
 
 .left-side {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
 }
 
 .hiw-1,
 .hiw-2,
 .hiw-3,
 .hiw-4 {
-    width: 25%;
+    width: 50%;
     text-align: center;
     padding: 20px 0;
 }
 
 .hiw-1>i {
-    color: white;
+    color: #373737;
     font-size: 2em;
     text-align: center;
 }
 
 .hiw-2>i {
-    color: white;
+    color: #373737;
     font-size: 2em;
     text-align: center;
 }
 
 .hiw-3>i {
-    color: white;
+    color: #373737;
     font-size: 2em;
     text-align: center;
 }
 
 .hiw-4>i {
-    color: white;
+    color: #373737;
     font-size: 2em;
     text-align: center;
 }
@@ -858,11 +862,11 @@ p {
 }
 
 .hiw-header {
-    color: #fff;
+    color: #373737;
 }
 
 .hiw-header>span {
-    background-color: rgb(49, 149, 225);
+    background-color: rgb(225, 49, 49);
     width: 50px;
     height: 50px;
     border: none;
@@ -874,6 +878,7 @@ p {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    color: white;
 }
 
 .hiw- .start-saving>h1 {
@@ -890,7 +895,10 @@ p {
 }
 
 .hiw-img>p>img {
-    width: 100%;
+    height: 900px;
+    position: absolute;
+    bottom: 50px;
+    right: -360px;
 }
 
 
@@ -1451,6 +1459,15 @@ li {
 
 .footer-section-2>p>a:hover {
     color: white;
+}
+
+@media only screen and (max-width: 1450px) {
+    .hiw-img>p>img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
