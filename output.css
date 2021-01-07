@@ -76,6 +76,10 @@ p {
     padding: 20px 0 20px 0;
 }
 
+.call-and-get-quote>ul>li:nth-child(1) {
+    display: none;
+}
+
 .call-and-get-quote>ul>li>a {
     color: white;
 }
@@ -606,6 +610,7 @@ p {
 }
 
 .wwas-info>ul {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
@@ -1721,6 +1726,9 @@ li {
         font-size: 1.2em;
         line-height: 1.8;
     }
+    .call-and-get-quote>ul>li:nth-child(1) {
+        display: block;
+    }
     .modal-form {
         width: 90%;
         padding: 20px 20px;
@@ -1771,11 +1779,27 @@ li {
         height: 360px;
         padding: 0 20px;
     }
+    .wwas-info>h2 {
+        width: 100%;
+    }
+    .wwas-info>h3 {
+        width: 100%;
+    }
+    .installing-section>ul {
+        padding-top: 30px;
+    }
+    .installing-section>ul>li {
+        width: 100%;
+        padding-top: 30px;
+    }
     .benefit-box>li {
         width: 300px;
     }
     .benefit-box>li>p {
         font-size: 16px;
+    }
+    .how-it-works>h2 {
+        width: 100%;
     }
     .hiw-img {
         display: none;
