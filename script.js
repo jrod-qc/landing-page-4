@@ -40,6 +40,28 @@ $(".close-btn").on("click", function() {
 })
 
 
+// This is the benefits counts section
+$('.counter').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+
+    $({ countNum: $this.text() }).animate({
+            countNum: countTo
+        },
+
+        {
+            duration: 6000,
+            easing: 'linear',
+            step: function() {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+            }
+        });
+});
+
 setInterval(function() {
     const howItWorks = $(".hiw-1");
     const howItWorks2 = $(".hiw-2");

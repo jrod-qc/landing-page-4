@@ -413,7 +413,7 @@ p {
 }
 
 .section:nth-child(3) {
-    background: #115c7d url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/AdobeStock_340561980_Airflow-d.jpg);
+    background: #000000c2 url(http://dev20.quietcoolsystems.com/wp-content/uploads/2020/05/Savings_Tile_2_694x635.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,7 +421,7 @@ p {
 }
 
 .section:nth-child(4) {
-    background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg);
+    background: #115c7d url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/AdobeStock_340561980_Airflow-d.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,7 +429,7 @@ p {
 }
 
 .section:nth-child(5) {
-    background: #171717;
+    background: #881108 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/h8-port-img-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -437,6 +437,14 @@ p {
 }
 
 .section:nth-child(6) {
+    background: #171717;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(7) {
     background: #000000d1 url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/Family_5_1388x1008-d.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -444,7 +452,7 @@ p {
     background-attachment: fixed;
 }
 
-.section:nth-child(7) {
+.section:nth-child(8) {
     background: #000000af url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/STL_WHF_2_1000x1000.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -452,7 +460,7 @@ p {
     background-attachment: fixed;
 }
 
-.section:nth-child(8) {
+.section:nth-child(9) {
     background: #5a2b2b url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/TRI_WHF_3_1000x1000.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -460,7 +468,7 @@ p {
     background-attachment: fixed;
 }
 
-.section:nth-child(9) {
+.section:nth-child(10) {
     background: #2b465a url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/2560x800_RMWHF.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -468,7 +476,7 @@ p {
     background-attachment: fixed;
 }
 
-.section:nth-child(11) {
+.section:nth-child(12) {
     background: #2b465a url(http://dev20.quietcoolsystems.com/wp-content/uploads/2021/01/photo-1508780709619-79562169bc64.jpeg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -581,7 +589,7 @@ p {
 
 .wwas-info>a>img {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 .wwas-info>h2 {
@@ -612,6 +620,39 @@ p {
 
 #white-bg {
     background-color: #ffffffdb;
+}
+
+
+/* This is the Benefits of Installation Section */
+
+.installing-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 2px 3px #0000009e;
+}
+
+.installing-section>h2 {
+    width: 80%;
+    text-align: center;
+}
+
+.installing-section>h2>span {
+    color: rgb(53, 133, 218);
+}
+
+.installing-section>ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.installing-section>ul>li {
+    width: 33%;
+    list-style: none;
+    text-align: center;
 }
 
 
@@ -658,7 +699,7 @@ p {
     width: 40%;
     list-style: none;
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
     margin-top: 20px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1201,8 +1242,9 @@ p {
     text-align: center;
 }
 
-.pricing-text>h1 {
+.pricing-text>h2 {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .pricing-text>p {
